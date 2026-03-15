@@ -34,7 +34,7 @@ function simplewysiwyg() {
 
 	// hide BBcode buttons once CKEditor is initialised
 	window.senky_simplewysiwyg_editor.once('instanceReady', function () {
-		var buttons = document.getElementById('format-buttons');
+		var buttons = document.getElementById('abbc3_buttons');
 		buttons.parentElement.removeChild(buttons);
 	});
 
