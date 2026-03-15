@@ -41,7 +41,8 @@ function loadScript() {
 }
 
 
-if (window.location.href.includes("posting.php") || window.location.href.includes("ucp.php?i=pm&mode=compose")) {
+// TODO: remove mode=quote once quote mode is supported
+if (window.location.href.includes("posting.php") && !(window.location.href.includes("mode=quote")) || window.location.href.includes("ucp.php?i=pm&mode=compose")) {
     // console.log("Ivelt extension loaded on posting.php");
     loadScript();
 } else {
